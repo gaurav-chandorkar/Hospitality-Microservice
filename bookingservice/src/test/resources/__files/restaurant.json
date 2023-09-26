@@ -1,20 +1,22 @@
-{
-  "restaurantId": "64cb913019c6f7469f812c21",
-  "name": "Resko Hotel",
-  "city": "Delhi",
-  "stars": 4,
-  "tables": [
-    {
-      "tableId": "9",
-      "chairCapacity": 4,
-      "bookingDate": "29/07/2023",
-      "available": true
-    },
-    {
-      "tableId": "45",
-      "chairCapacity": 4,
-      "bookingDate": "29/07/2023",
-      "available": true
-    }
-  ]
-}
+[
+  {
+    "restaurantId": "64cb913019c6f7469f812c21",
+    "name": "Resko Hotel",
+    "city": "Delhi",
+    "stars": 4,
+    "tables": [
+      {
+        "tableId": "9",
+        "chairCapacity": 4,
+        "bookingDate": "29/07/2023",
+        "available": true
+      },
+      {
+        "tableId": "45",
+        "chairCapacity": 4,
+        "bookingDate": "29/07/2023",
+        "available": true
+      }
+    ]
+  }
+]

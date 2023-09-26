@@ -55,13 +55,8 @@ class BookingControllerTest {
     @Test
     void retrieveAvailableTableByRestaurantId(){
         var restaurantId="64cb913019c6f7469f812c21";
-        /*stubFor(get(urlEqualTo("v1/restaurant/"+restaurantId))
-                .willReturn(aResponse()
-                        .withHeader("Content-Type","application/json")
-                        .withBodyFile("restaurant.json")));*/
 
-        var movieId = "abc";
-        stubFor(get(urlEqualTo("/v1/restaurant/"+movieId))
+        stubFor(get(urlEqualTo("/v1/restaurant/"+restaurantId))
                 .willReturn(aResponse()
                         .withStatus(200)
                         .withHeader("Content-Type", "application/json")
@@ -72,7 +67,7 @@ class BookingControllerTest {
                 .exchange()
                 .expectStatus()
                 .isOk()
-                .expectBody(Restaurant.class);
+                .expectBody(List.class);
     }
     @Test
     void getAllBookingInfo() {
